@@ -1,3 +1,3 @@
 class Exam < ApplicationRecord
-  belongs_to :college
+  belongs_to :college, optional: true
 end
