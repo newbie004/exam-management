@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   resources :exams, only: [:create, :update]
   resources :colleges, only: [:create]
   resources :exam_windows, only: [:create]
+  post '/allocate_exam', to: 'allocator#allocate_exam'
 
 end
