@@ -1,24 +1,44 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# README
 
-Things you may want to cover:
+* ruby version: 3.2.2
+* rails version: 7.0.8
 
-* Ruby version
 
-* System dependencies
+To run this Application
+* After cloning, migrate the database by running `rails db:migrate` to create tables.
+* [POST] API END POINT - http://localhost:3000/allocate_exam
 
-* Configuration
+* Sample Body for /allocate_exam
+      {
+            "allocator": {
+            "first_name": "Raj",
+            "last_name": "Kamal",
+            "phone_number": "123-456-7890",
+            "college_id": 1,
+            "exam_id": 1,
+            "start_time": "2023-10-01T10:00:00Z"
+            }
+      }
 
-* Database creation
 
-* Database initialization
+* [POST] API END POINT for college creation => http://localhost:3000/colleges/
+* Sample body for college creation
+      {
+            "college": {
+                  "name": "Kirorimal College"
+            }
+      }
 
-* How to run the test suite
+* [POST] API END POINT for exam creation => http://localhost:3000/exams/
+* Sample body for college creation
+      {
+            "exam": {
+                  "name": "Kirorimal College",
+                  "college_id": 1
+            }
+      }
+Here valid college id should be passed, or it can be null.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
