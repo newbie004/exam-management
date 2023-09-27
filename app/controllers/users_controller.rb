@@ -15,3 +15,6 @@ class UsersController < ApplicationController
       params.require(:user).permit(:first_name, :last_name, :phone_number, :exam_id)
     end
   end
+
+
+  
