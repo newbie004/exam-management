@@ -1,7 +1,5 @@
 # README
 
-# README
-
 * ruby version: 3.2.2
 * rails version: 7.0.8
 
@@ -25,7 +23,7 @@ To run this Application
                   "college_id": 1
             }
       }
-Here valid college id should be passed, or it can be null.
+Here valid college id must be passed or kept empty.
 
 * [POST] API END POINT for exam creation => http://localhost:3000/exam_windows/
 * Sample body for exam_window
