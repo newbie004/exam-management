@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   resources :users, only: [:create, :update]
   resources :exams, only: [:create, :update]
   resources :colleges, only: [:create]
+  resources :exam_windows, only: [:create]
 
 end
